@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>welcome</title>
+    <title>Game</title>
      <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -12,12 +11,19 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-    <h1>this is my first page.</h1>
-    <ul>
-        <li>First item.</li>
-        <li>Second item</li>
-    </ul>
+    <h1>Lets play an addition game.</h1>
+    <div> What is: <span id="num1"></span>+<span id="num2"></span> </div>
+    <form>
+        <input id="input" type="number" placeholder="Result">
+        <input type="button" value="Submit" id="butn">
+<!--        <button id="butn">Submit</button>-->
+    </form>
+    <div>Your score is: <span id="score">0</span> </div>
 </body>
 </html>
