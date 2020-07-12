@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         else{
             document.getElementById("score").innerHTML = score-1;
         }
-        document.getElementById("input").value = ''
-        num1 = Math.floor(Math.random() * 11);
-        num2 = Math.floor(Math.random() * 11);
-        document.getElementById("num1").innerHTML = num1;
-        document.getElementById("num2").textContent = num2;
         if (score == 4){
             alert('You won!! Restarting.')
             document.getElementById("score").innerHTML = 0;
@@ -46,6 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('You lost!! Restarting.')
             document.getElementById("score").innerHTML = 0;
         }
+        document.getElementById("input").value = ''
+        num1 = Math.floor(Math.random() * 11);
+        num2 = Math.floor(Math.random() * 11);
+        document.getElementById("num1").innerHTML = num1;
+        document.getElementById("num2").textContent = num2;
     })
 }
 )
