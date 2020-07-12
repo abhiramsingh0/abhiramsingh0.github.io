@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         num2 = Math.floor(Math.random() * 11);
         document.getElementById("num1").innerHTML = num1;
         document.getElementById("num2").textContent = num2;
+        button.disabled = true
     })
 }
 )
