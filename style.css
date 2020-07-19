@@ -1,6 +1,7 @@
 h1{
     color:blue;
     font-size: 50px;
+    font-size: 5vw;
     text-align: center;
 }
 
@@ -9,7 +10,7 @@ ul{
 }
 
 div{
-    font-size: 30px;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -19,4 +20,5 @@ form{
 
 p{
     text-align: center;
+    font-size: 2vw;
 }
