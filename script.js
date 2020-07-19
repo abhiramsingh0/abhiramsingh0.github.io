@@ -25,21 +25,32 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     button.addEventListener("click", () => {
-        let score = Number(document.getElementById("score").textContent);
-        let answer = Number(document.getElementById("input").value);
+        let scoreObj = document.getElementById("score");
+        let score = Number(scoreObj.textContent);
+        let inputObj = document.getElementById("input");
+        let answer = Number(inputObj.value);
+        inputObj.focus()
         if (answer == num1+num2){
-            document.getElementById("score").innerHTML = score+1;
+            scoreObj.innerHTML = score+1;
+            if (score+1 > 0){scoreObj.style.color = 'lime';}
+            else if (score+1 == 0){scoreObj.style.color = 'black';}
+            else{scoreObj.style.color = 'red';}
+            if (score+1 == 5){
+                alert('You won!! Restarting.')
+                scoreObj.innerHTML = 0;
+                scoreObj.style.color = 'black';
+            }
         }
         else{
-            document.getElementById("score").innerHTML = score-1;
-        }
-        if (score == 4){
-            alert('You won!! Restarting.')
-            document.getElementById("score").innerHTML = 0;
-        }
-        else if (score == -4){
-            alert('You lost!! Restarting.')
-            document.getElementById("score").innerHTML = 0;
+            scoreObj.innerHTML = score-1;
+            if (score-1 > 0){scoreObj.style.color = 'lime';}
+            else if (score-1 == 0){scoreObj.style.color = 'black';}
+            else{scoreObj.style.color = 'red';}
+            if (score-1 == -5){
+                alert('You lost!! Restarting.')
+                scoreObj.innerHTML = 0;
+                scoreObj.style.color = 'black';
+            }
         }
         document.getElementById("input").value = ''
         num1 = Math.floor(Math.random() * 11);

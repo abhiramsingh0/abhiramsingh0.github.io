@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Game</title>
-     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
 </head>
 <body>
     <h1>Lets play an addition game.</h1>
-    <p>Rules: +1 for right answer and -1 for wrong.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">First Rule: +1 for right answer and -1 for wrong.</div>
+            <div class="col-md-6">Second Rule: win the game at 5 and lose at -5.</div>
+        </div>
+    </div>
     <div> What is: <span id="num1"></span>+<span id="num2"></span> </div>
     <form>
-        <input id="input" type="number" placeholder="Result" autocomplete="off">
+        <input id="input" type="number" placeholder="Result" autocomplete="off" autofocus>
         <input type="button" value="Submit" id="butn">
 <!--        <button id="butn">Submit</button>-->
     </form>
