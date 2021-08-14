@@ -1,23 +1,6 @@
-h1{
-    color:blue;
-    font-size: 50px;
-    //font-size: 5vw;
-    text-align: center;
-}
-
-ul{
-    color:green;
-}
-
-div{
-    font-size: 30px;
-    text-align: center;
-}
-
-form{
-    text-align: center;
-}
-
-.col-md-6{
-    font-size: 20px;
+.img-fluid{
+/*margin-left: 10px;*/
+margin-top: 25px;
+max-width: 80%;
+/*min-width: 7%;*/
 }
