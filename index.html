@@ -1,31 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Abhiram Singh</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
+
 <body>
-    <h1>Lets play an addition game.</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">First Rule: +1 for right answer and -1 for wrong.</div>
-            <div class="col-md-6">Second Rule: win the game at 5 and lose at -5.</div>
-        </div>
-    </div>
-    <div> What is: <span id="num1"></span>+<span id="num2"></span> </div>
-    <form>
-        <input id="input" type="number" placeholder="Result" autocomplete="off" autofocus>
-        <input type="button" value="Submit" id="butn">
-<!--        <button id="butn">Submit</button>-->
-    </form>
-    <div>Your score is: <span id="score">0</span> </div>
+<div class="container-fluid">
+	<h1>Abhiram Singh</h1>
+	<ul class="nav nav-tabs nav-fill">
+		<li class="active">
+		<a data-toggle="tab" href="#Home">Home</a>
+		</li>
+		
+<!--		<li>-->
+<!--		<a data-toggle="tab" href="#Publications">Publications</a>-->
+<!--		</li>-->
+		
+		<li>
+		<a data-toggle="tab" href="#CV">CV</a>
+		</li>
+<!--		-->
+<!--		<li>-->
+<!--		<a data-toggle="tab" href="#Contact">Contact</a>-->
+<!--		</li>-->
+	</ul>
+	
+	<div class="tab-content">
+		<div id="Home" class="tab-pane fade in active">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="my_pic.jpg" class="img-fluid" alt="Pic of Abhiram Singh">
+					<h3>Abhiram Singh</h3>
+					<p><div>PhD student</div>
+					<div>Computer Science and Engineering</div>
+					<div>Indian Institiute of Technology Bombay</div></p>
+					
+					<p>Email: abhiram@cse.iitb.ac.in</p>
+					<div>Address: SIC 210, Gigabit Networking Laboratory,</div>
+					<div>Kresit Building, CSE Department, IIT Bombay, India, 400076</div>
+					<div>More details:
+						<a href="https://github.com/abhiramsingh0">Github</a>, 
+						<a href="https://www.linkedin.com/in/abhiram-singh">Linkedin</a>,
+						<a href="https://scholar.google.com/citations?user=UD0QmwUAAAAJ&hl=en&authuser=1">Google scholar</a>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<h2>About Me</h2>
+					<p>
+					I am a Ph.D. student in the CSE dept of IIT Bombay and working with my supervisor Dr. Ashwin Gumaste.
+					My research interest lies at the intersection of Machine Learning and Computer Networks.
+					I am currently working on the intelligent computation models for routing in IP networks and developing network verification tools. 
+					I have also worked in the exciting area of the Brain-computer interface.
+					In the past, I have completed my M.Tech from CSE dept., NIT Hamirpur, India, where I have worked in wireless sensor networks with Prof. T. P. Sharma.
+					I also have an industry experience in Aricent, where I worked as a software engineer.
+					</p>
+					
+					
+					
+					<h2>Publications</h2>
+					<h3>Journals</h3>
+				<ul>
+					<li>
+						Abhiram Singh and Ashwin Gumaste, "Decoding imagined speech and computer control using brain waves", Journal of Neuroscience Methods, 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#JNMpaper" aria-expanded="false" aria-controls="collapseExample">
+						abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/1911.04255.pdf" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="JNMpaper">
+					  <div class="card card-body">
+						In this work, we explore the possibility of decoding Imagined Speech brain waves using machine learning techniques. We propose a covariance matrix of Electroencephalogram channels as input features, projection to tangent space of covariance matrices for obtaining vectors from covariance matrices, principal component analysis for dimension reduction of vectors, an artificial feed-forward neural network as a classification model and bootstrap aggregation for creating an ensemble of neural network models. After the classification, two different Finite State Machines are designed that create an interface for controlling a computer system using an Imagined Speech-based BCI system. The proposed approach is able to decode the Imagined Speech signal with a maximum mean classification accuracy of 85% on binary classification task of one long word and a short word. We also show that our proposed approach is able to differentiate between imagined speech brain signals and rest state brain signals with maximum mean classification accuracy of 94%. We compared our proposed method with other approaches for decoding imagined speech and show that our approach performs equivalent to the state of the art approach on decoding long vs. short words and outperforms it significantly on the other two tasks of decoding three short words and three vowels with an average margin of 11% and 9%, respectively. We also obtain an information transfer rate of 21-bits-per-minute when using an IS based system to operate a computer. These results show that the proposed approach is able to decode a wide variety of imagined speech signals without any human-designed features.
+					  </div>
+					</div>
+					
+					<li>
+						Sidharth Sharma, Abhiram Singh, Ashwin Gumaste and Biswanath Mukherjee, "Light-trail Design for 5G Backhaul: Architecture, SDN Impact and Coordinated Multipoint", Accepted in IEEE/OSA Journal of Lightwave Technology (JLT), 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#JLTpaper" aria-expanded="false" aria-controls="JLTpaper">
+						abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="JLTpaper">
+					  <div class="card card-body">
+						5G promises to be revolutionary from the perspective of offering unprecedented bandwidth to the end-user. In this pursuit, the limited spectrum of the wireless overlay further constricted by distance, requires strong support from a backhaul network. Such a strong backhaul network should provide large bandwidth pipes at near-proximity to the end-user at low-costs and using pragmatic technology. Naturally an optical solution is best suited to meet the voluminous bandwidth requirements of the backhaul. This optical solution has to cater to dynamic bandwidth needs among base stations, provide for rapid and smart provisioning to meet the requirement of new features such as Coordinated Multipoint (CoMP) among base-stations, and yet be low-cost. To this end, we propose the use of light-trails -- a generalization of a lightpath that provides for dynamic bandwidth communication, sub-wavelength granularity and optical layer multicasting using contemporary optics. We observe that each feature of a light-trail, i.e. dynamic provisioning, optical multicast and sub-wavelength grooming are strongly desired by the 5G backhaul, implying a clear mapping between the two. We investigate the usage of light-trails as a 5G backhaul solution. We discuss the proposed architecture of light-trails for micro cells, pico, and femto cells as well as for macro cells. We present the light-trail design problem for 5G backhaul as a constrained optimization problem. We also present the coordinated multipoint problem mapped onto light-trails and propose an optimized solution for such a mapping. A dynamic virtual topology growth algorithm for the backhaul is also presented and extensively evaluated. The light-trails approach is compared to other approaches including the use of an SDN controller and significant performance benefits are observed. 
+					  </div>
+					</div>
+					
+					<li>
+						Abhiram Singh and T. P. Sharma, "Position and hop-count assisted full coverage control in dense sensor networks", Wireless Networks, 2015.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#WNpaper" aria-expanded="false" aria-controls="WNpaper">
+						abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://doi.org/10.1007/s11276-014-0810-2" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="WNpaper">
+					  <div class="card card-body">
+						In recent years, wireless sensor networks (WSN’s) have gained much attention due to its various applications in military, environmental monitoring, industries and in many others. All these applications require some target field to be monitored by a group of sensor nodes. Hence, coverage becomes an important issue in WSN’s. This paper focuses on full coverage issue of WSN’s. Based on the idea of some existing and derived theorems, Position and Hop-count Assisted (PHA) algorithm is proposed. This algorithm provides full coverage of the target field, maintains network connectivity and tries to minimize the number of working sensor nodes. Algorithm works for communication range less than root three times of sensing range and it can be extended for arbitrary relation between communication range and sensing range. By using hop-count value, three-connectivity in the network is maintained. Also, neighbors information is used to create logical tree structure which can be utilized in routing, redundant data removal and in other areas. Simulation results show that PHA algorithm outperforms layered diffusion-based coverage control algorithm by providing better area coverage and activating fewer nodes.
+					  </div>
+					</div>
+					
+				</ul>
+
+				
+			<h3>Conferences</h3>
+				<ul>
+					<li>
+						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Using Deep Reinforcement Learning for Routing in IP Networks", Accepted in IEEE 30th International Conference on Computer Communications and Networks (ICCCN), 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#ICCCNpaper" aria-expanded="false" aria-controls="ICCCNpaper">
+							abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="ICCCNpaper">
+					  <div class="card card-body">
+					  This paper proposes Trailnet, a deep reinforcement learning approach to predict the output port (of a router) for an IP packet based on its destination IP address.
+Trailnet attempts to replace the forwarding table at an IP router with a computational model.  
+To optimally learn each router's forwarding decisions, we propose to train the Artificial Neural Network (ANN) of Trailnet with value iteration and stochastic gradient descent. 
+Through the value iteration algorithm, Trailnet estimates the cost of IP packet forwarding along different ports of a router and eventually selects a port that optimizes a cost function. 
+We evaluate the generalization capability of the ANN on two sufficiently large service provider's network topologies containing millions of IP addresses. 
+Our evaluations show that Trailnet achieves high accuracy and fast inference time for predicting the correct output ports for incoming IP packets. Our results support the claim of replacing forwarding tables and distributed protocols (for computing shortest paths) with a computation model while operating at a high line rate in IP routers.
+					  </div>
+					</div>
+
+					<li>
+						Abhiram Singh and T. P. Sharma, "A survey on area coverage in wireless sensor networks", International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT), 2014.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#ICCICCTpaper" aria-expanded="false" aria-controls="ICCICCTpaper">
+							abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://doi.org/10.1109/ICCICCT.2014.6993073" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="ICCICCTpaper">
+					  <div class="card card-body">
+						In recent years, Wireless Sensor Networks (WSNs) have gained much attention because of its varying applications from catastrophic region to industrial and household region. In few applications, sensors are deployed in extreme environmental conditions. Hence, node access is not possible in that scenario. Therefore, a large number of sensor nodes are deployed in the target field so that node replacement problem is eliminated. Also, coverage is a very important parameter because it measures how effectively a target field is monitored by the sensor network. This paper focuses on the coverage issue in wireless sensor networks. Initially, three different types of coverage issues are discussed. Then, full coverage issue is examined by considering different points such as node type, deployment type, relation of communication range to sensing range, strategy used to detect full coverage and positioning based/independent algorithms. Some applications of wireless sensor networks are given. Finally, research challenges in the field of area coverage are discussed.
+
+					  </div>
+					</div>
+					
+				</ul>
+				
+			<h3>Preprint</h3>
+				<ul>
+					<li>
+						Abhiram Singh and Ashwin Gumaste, "Interpreting Imagined Speech Waves with Machine Learning techniques", arXiv preprint arXiv:2010.03360, 2020.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#arXivpaper" aria-expanded="false" aria-controls="arXivpaper">
+							abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2010.03360.pdf" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="arXivpaper">
+					  <div class="card card-body">
+						This work explores the possibility of decoding Imagined Speech (IS) signals which can be used to create a new design of Human-Computer Interface (HCI). Since the underlying process generating EEG signals is unknown, various feature extraction methods, along with different neural network (NN) models, are used to approximate data distribution and classify IS signals. Based on the experimental results, feed-forward NN model with ensemble and covariance matrix transformed features showed the highest performance in comparison to other existing methods. For comparison, three publicly available datasets were used. We report a mean classification accuracy of 80% between rest and imagined state, 96% and 80% for decoding long and short words on two datasets. These results show that it is possible to differentiate brain signals (generated during rest state) from the IS brain signals. Based on the experimental results, we suggest that the word length and complexity can be used to decode IS signals with high accuracy, and a BCI system can be designed with IS signals for computer interaction. These ideas, and results give direction for the development of a commercial level IS based BCI system, which can be used for human-computer interaction in daily life.
+					  </div>
+					</div>
+					
+				</ul>
+			
+			<h3>Patent application</h3>
+				<ul>
+					<li>
+						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Grafnet: Using Graph Neural Networks to Create Table-Less Routers", (under review).
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#patentpaper" aria-expanded="false" aria-controls="patentpaper">
+							abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="patentpaper">
+					  <div class="card card-body">
+						Grafnet, a Graph Neural-Network (GNN)-based scheme learns IP-address-to-port mapping, leading to forwarding table-less routers. GNNs allow mapping network-wide features like adjacencies and addresses to generate new representations. Grafnet converts network-wide IP-addresses to a feature space using GNNs. GNNs extrapolate node adjacencies onto a feature matrix, whose output tells which address / subnet is connected to a node and port. To do so, we use a GNN in conjunction with an Artificial Neural Network (ANN), whose output transforms graph adjacencies to address-based adjacencies. We exploit the fact that IP-addresses are present in contiguous groups (subnets) or 'ranges'. Large range sizes imply better likelihood of Grafnets’ approximation, though with \textit{enough} learning Grafnet learns just about all networkwide IP-addresses, irrespective of range sizes. Grafnet is evaluated as a SDN scheme on (1) 75-node US-core network and (2) 2000-node, 5 million IP address-based random WAN topology. Analytically, we show equivalence between Grafnet and a Feed-forward neural-network implying exhaustiveness and correctness. The proposed Grafnet model is able to work as a direct address translator, without the need for tables in the forwarding plane of a router. Engineering considerations to implement Grafnet are also discussed. 
+					  </div>
+					</div>
+					
+				</ul>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="Publications" class="tab-pane fade">
+			<h3>Journals</h3>
+				<ul>
+					<li>
+						Abhiram Singh and Ashwin Gumaste, "Decoding imagined speech and computer control using brain waves", Journal of Neuroscience Methods, 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#JNMpaper" aria-expanded="false" aria-controls="collapseExample">
+						abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/1911.04255.pdf" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="JNMpaper">
+					  <div class="card card-body">
+						In this work, we explore the possibility of decoding Imagined Speech brain waves using machine learning techniques. We propose a covariance matrix of Electroencephalogram channels as input features, projection to tangent space of covariance matrices for obtaining vectors from covariance matrices, principal component analysis for dimension reduction of vectors, an artificial feed-forward neural network as a classification model and bootstrap aggregation for creating an ensemble of neural network models. After the classification, two different Finite State Machines are designed that create an interface for controlling a computer system using an Imagined Speech-based BCI system. The proposed approach is able to decode the Imagined Speech signal with a maximum mean classification accuracy of 85% on binary classification task of one long word and a short word. We also show that our proposed approach is able to differentiate between imagined speech brain signals and rest state brain signals with maximum mean classification accuracy of 94%. We compared our proposed method with other approaches for decoding imagined speech and show that our approach performs equivalent to the state of the art approach on decoding long vs. short words and outperforms it significantly on the other two tasks of decoding three short words and three vowels with an average margin of 11% and 9%, respectively. We also obtain an information transfer rate of 21-bits-per-minute when using an IS based system to operate a computer. These results show that the proposed approach is able to decode a wide variety of imagined speech signals without any human-designed features.
+					  </div>
+					</div>
+					
+					<li>
+						Sidharth Sharma, Abhiram Singh, Ashwin Gumaste and Biswanath Mukherjee, "Light-trail Design for 5G Backhaul: Architecture, SDN Impact and Coordinated Multipoint", Accepted in IEEE/OSA Journal of Lightwave Technology (JLT), 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#JLTpaper" aria-expanded="false" aria-controls="JLTpaper">
+						abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="JLTpaper">
+					  <div class="card card-body">
+						5G promises to be revolutionary from the perspective of offering unprecedented bandwidth to the end-user. In this pursuit, the limited spectrum of the wireless overlay further constricted by distance, requires strong support from a backhaul network. Such a strong backhaul network should provide large bandwidth pipes at near-proximity to the end-user at low-costs and using pragmatic technology. Naturally an optical solution is best suited to meet the voluminous bandwidth requirements of the backhaul. This optical solution has to cater to dynamic bandwidth needs among base stations, provide for rapid and smart provisioning to meet the requirement of new features such as Coordinated Multipoint (CoMP) among base-stations, and yet be low-cost. To this end, we propose the use of light-trails -- a generalization of a lightpath that provides for dynamic bandwidth communication, sub-wavelength granularity and optical layer multicasting using contemporary optics. We observe that each feature of a light-trail, i.e. dynamic provisioning, optical multicast and sub-wavelength grooming are strongly desired by the 5G backhaul, implying a clear mapping between the two. We investigate the usage of light-trails as a 5G backhaul solution. We discuss the proposed architecture of light-trails for micro cells, pico, and femto cells as well as for macro cells. We present the light-trail design problem for 5G backhaul as a constrained optimization problem. We also present the coordinated multipoint problem mapped onto light-trails and propose an optimized solution for such a mapping. A dynamic virtual topology growth algorithm for the backhaul is also presented and extensively evaluated. The light-trails approach is compared to other approaches including the use of an SDN controller and significant performance benefits are observed. 
+					  </div>
+					</div>
+					
+					<li>
+						Abhiram Singh and T. P. Sharma, "Position and hop-count assisted full coverage control in dense sensor networks", Wireless Networks, 2015.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#WNpaper" aria-expanded="false" aria-controls="WNpaper">
+						abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://doi.org/10.1007/s11276-014-0810-2" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="WNpaper">
+					  <div class="card card-body">
+						In recent years, wireless sensor networks (WSN’s) have gained much attention due to its various applications in military, environmental monitoring, industries and in many others. All these applications require some target field to be monitored by a group of sensor nodes. Hence, coverage becomes an important issue in WSN’s. This paper focuses on full coverage issue of WSN’s. Based on the idea of some existing and derived theorems, Position and Hop-count Assisted (PHA) algorithm is proposed. This algorithm provides full coverage of the target field, maintains network connectivity and tries to minimize the number of working sensor nodes. Algorithm works for communication range less than root three times of sensing range and it can be extended for arbitrary relation between communication range and sensing range. By using hop-count value, three-connectivity in the network is maintained. Also, neighbors information is used to create logical tree structure which can be utilized in routing, redundant data removal and in other areas. Simulation results show that PHA algorithm outperforms layered diffusion-based coverage control algorithm by providing better area coverage and activating fewer nodes.
+					  </div>
+					</div>
+					
+				</ul>
+
+				
+			<h3>Conferences</h3>
+				<ul>
+					<li>
+						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Using Deep Reinforcement Learning for Routing in IP Networks", Accepted in IEEE 30th International Conference on Computer Communications and Networks (ICCCN), 2021.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#ICCCNpaper" aria-expanded="false" aria-controls="ICCCNpaper">
+							abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="ICCCNpaper">
+					  <div class="card card-body">
+					  This paper proposes Trailnet, a deep reinforcement learning approach to predict the output port (of a router) for an IP packet based on its destination IP address.
+Trailnet attempts to replace the forwarding table at an IP router with a computational model.  
+To optimally learn each router's forwarding decisions, we propose to train the Artificial Neural Network (ANN) of Trailnet with value iteration and stochastic gradient descent. 
+Through the value iteration algorithm, Trailnet estimates the cost of IP packet forwarding along different ports of a router and eventually selects a port that optimizes a cost function. 
+We evaluate the generalization capability of the ANN on two sufficiently large service provider's network topologies containing millions of IP addresses. 
+Our evaluations show that Trailnet achieves high accuracy and fast inference time for predicting the correct output ports for incoming IP packets. Our results support the claim of replacing forwarding tables and distributed protocols (for computing shortest paths) with a computation model while operating at a high line rate in IP routers.
+					  </div>
+					</div>
+
+					<li>
+						Abhiram Singh and T. P. Sharma, "A survey on area coverage in wireless sensor networks", International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT), 2014.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#ICCICCTpaper" aria-expanded="false" aria-controls="ICCICCTpaper">
+							abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://doi.org/10.1109/ICCICCT.2014.6993073" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="ICCICCTpaper">
+					  <div class="card card-body">
+						In recent years, Wireless Sensor Networks (WSNs) have gained much attention because of its varying applications from catastrophic region to industrial and household region. In few applications, sensors are deployed in extreme environmental conditions. Hence, node access is not possible in that scenario. Therefore, a large number of sensor nodes are deployed in the target field so that node replacement problem is eliminated. Also, coverage is a very important parameter because it measures how effectively a target field is monitored by the sensor network. This paper focuses on the coverage issue in wireless sensor networks. Initially, three different types of coverage issues are discussed. Then, full coverage issue is examined by considering different points such as node type, deployment type, relation of communication range to sensing range, strategy used to detect full coverage and positioning based/independent algorithms. Some applications of wireless sensor networks are given. Finally, research challenges in the field of area coverage are discussed.
+
+					  </div>
+					</div>
+					
+				</ul>
+				
+			<h3>Preprint</h3>
+				<ul>
+					<li>
+						Abhiram Singh and Ashwin Gumaste, "Interpreting Imagined Speech Waves with Machine Learning techniques", arXiv preprint arXiv:2010.03360, 2020.
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#arXivpaper" aria-expanded="false" aria-controls="arXivpaper">
+							abstract
+	  					</button>
+	  					<a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2010.03360.pdf" role="button" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="arXivpaper">
+					  <div class="card card-body">
+						This work explores the possibility of decoding Imagined Speech (IS) signals which can be used to create a new design of Human-Computer Interface (HCI). Since the underlying process generating EEG signals is unknown, various feature extraction methods, along with different neural network (NN) models, are used to approximate data distribution and classify IS signals. Based on the experimental results, feed-forward NN model with ensemble and covariance matrix transformed features showed the highest performance in comparison to other existing methods. For comparison, three publicly available datasets were used. We report a mean classification accuracy of 80% between rest and imagined state, 96% and 80% for decoding long and short words on two datasets. These results show that it is possible to differentiate brain signals (generated during rest state) from the IS brain signals. Based on the experimental results, we suggest that the word length and complexity can be used to decode IS signals with high accuracy, and a BCI system can be designed with IS signals for computer interaction. These ideas, and results give direction for the development of a commercial level IS based BCI system, which can be used for human-computer interaction in daily life.
+					  </div>
+					</div>
+					
+				</ul>
+			
+			<h3>Patent application</h3>
+				<ul>
+					<li>
+						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Grafnet: Using Graph Neural Networks to Create Table-Less Routers", (under review).
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#patentpaper" aria-expanded="false" aria-controls="patentpaper">
+							abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+					</li>
+					<div class="collapse" id="patentpaper">
+					  <div class="card card-body">
+						Grafnet, a Graph Neural-Network (GNN)-based scheme learns IP-address-to-port mapping, leading to forwarding table-less routers. GNNs allow mapping network-wide features like adjacencies and addresses to generate new representations. Grafnet converts network-wide IP-addresses to a feature space using GNNs. GNNs extrapolate node adjacencies onto a feature matrix, whose output tells which address / subnet is connected to a node and port. To do so, we use a GNN in conjunction with an Artificial Neural Network (ANN), whose output transforms graph adjacencies to address-based adjacencies. We exploit the fact that IP-addresses are present in contiguous groups (subnets) or 'ranges'. Large range sizes imply better likelihood of Grafnets’ approximation, though with \textit{enough} learning Grafnet learns just about all networkwide IP-addresses, irrespective of range sizes. Grafnet is evaluated as a SDN scheme on (1) 75-node US-core network and (2) 2000-node, 5 million IP address-based random WAN topology. Analytically, we show equivalence between Grafnet and a Feed-forward neural-network implying exhaustiveness and correctness. The proposed Grafnet model is able to work as a direct address translator, without the need for tables in the forwarding plane of a router. Engineering considerations to implement Grafnet are also discussed. 
+					  </div>
+					</div>
+					
+				</ul>
+		</div>
+		
+		
+		<div id="Resume" class="tab-pane fade">
+			<div class="embed-responsive embed-responsive-16by9">
+<!--	   			<object class="embed-responsive-item" data="Resume.pdf" type="application/pdf">		  		-->
+<!--	   			</object>-->
+	   			<iframe class="embed-responsive-item" src="Resume.pdf" width="100%">
+			</div>
+		</div>
+		
+		<div id="CV" class="tab-pane fade">
+		<div class="embed-responsive embed-responsive-16by9">
+	   			
+			</div>
+		</div>
+<!--		<div id="Contact" class="tab-pane fade">-->
+<!--		-->
+<!--		</div>-->
+  </div>
+	
+	
+<!--	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">-->
+<!--		<button type="button" class="btn btn-outline-primary">Home</button>-->
+<!--		<button type="button" class="btn btn-outline-primary">Publications</button>-->
+<!--		<button type="button" class="btn btn-outline-primary">Resume</button>-->
+<!--		<button type="button" class="btn btn-outline-primary">Contact</button>-->
+<!--	</div>-->
+
+</div>
 </body>
 </html>
