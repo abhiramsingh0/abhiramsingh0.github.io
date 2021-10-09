@@ -149,6 +149,23 @@ LeSQnets' premise is to abstract out IP prefixes into standard basis vectors in 
 By equating this matrix A and a vector b that represents the set of all IP prefixes under consideration, we are able to apply least-squares to compute which prefixes are reachable at the destination. Further, the use of least-squares opens new possibilities for understanding network behavior. For example, we are able to map rules, routing policies, what-if scenarios to the fundamental linear algebraic form, Ax=b. We show LeSQnet is faster than NetPlumber, Veriflow, APkeep, AP verifier, and almost as fast as Delta-net, but gives more scalability, expressiveness than all the approaches including Delta-net, APkeep and Veriflow, with capability for policy updates when measured over 5 leading datasets.
 					  </div>
 					</div>
+					
+					
+					<li>
+						Abhiram Singh, Aniruddha Kushwaha and Ashwin Gumaste, "TAP-IN: Table Address Prediction using Intelligent Learning for SDN Networks", to be submitted in ACM International Symposium on Computer Architecture (ISCA 2022).
+						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#TAPINpaper" aria-expanded="false" aria-controls="collapseExample">
+						abstract
+	  					</button>
+	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
+<!--	  					<a class="btn btn-outline-primary btn-sm" href="" role="button" target="_blank">pdf</a>-->
+					</li>
+					<div class="collapse" id="TAPINpaper">
+					  <div class="card card-body">
+						Match-table lookups are crucial for forwarding a packet in a network element (switch or router). While dedicated ASICs are used for match-action and lookup purposes, with the advent of programmability in the data-plane, one question that arises is whether such match-table lookups can be implemented in an FPGA?
+The limited on-FPGA memory restricts the number of rules that can be implemented, while off-chip memories are often too slow to operate at wire-speed operation. The recent availability of the High Bandwidth Memory (HBM) within FPGAs has made it possible to store millions of rules. However, performing table lookup at a high line-rate (10G/100G) is still a challenge. In this paper, we present a machine learning model (TAP-IN) for predicting an index (address) for a given IP address in a sorted match table. Instead of predicting the exact index, TAP-IN predicts a pseudo index, which is in the vicinity of the exact index, such that by further examination of just a few entries above or below the predicted pseudo-index, the exact match is obtained. In this paper, we proposed a machine learning model using Polynomial regression that work with software defined networks (SDN). To the best of our knowledge, this approach has never been applied to perform match table lookup. We have implemented TAP-IN on a Xilinx Virtex Ultrascale+ FPGAs having 64Gb of HBM. Our implemented models provide a throughput of 450 million lookups per second for IPv4 based lookup with one million rules in the match table, that translates to a line-rate of $\sim$230 Gbps for 64 bytes packets and $\sim$5.4 Tbps for 1518 bytes of packets.
+					  </div>
+					</div>					
+					
 				
 					<li>
 						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Using Deep Reinforcement Learning for Routing in IP Networks", Accepted in IEEE 30th International Conference on Computer Communications and Networks (ICCCN), 2021.
