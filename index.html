@@ -135,21 +135,21 @@ Engineering considerations to implement Grafnet are also discussed.
 				
 			<h3>Conferences</h3>
 				<ul>
-					<li>
-						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "LeSQnet: A Holistic and Expressive Tool using Least Squares for Network Verification", Under review in 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2022).
-						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#LeSQnetpaper" aria-expanded="false" aria-controls="collapseExample">
-						abstract
-	  					</button>
-	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>
-<!--	  					<a class="btn btn-outline-primary btn-sm" href="" role="button" target="_blank">pdf</a>-->
-					</li>
-					<div class="collapse" id="LeSQnetpaper">
-					  <div class="card card-body">
-						We present LeSQnet, a network verification tool that proposes a new fundamental technique for network verification -- away from the domain of SAT/SMT solvers, towards a more computationally tractable, algorithmically expressive and visually pleasing domain of linear algebra.
-LeSQnets' premise is to abstract out IP prefixes into standard basis vectors in a unique way; the smart arrangement of standard basis vectors lead to the creation of a port-specific design matrix A, representing a set of IP prefixes that a router forwards along its ports.
-By equating this matrix A and a vector b that represents the set of all IP prefixes under consideration, we are able to apply least-squares to compute which prefixes are reachable at the destination. Further, the use of least-squares opens new possibilities for understanding network behavior. For example, we are able to map rules, routing policies, what-if scenarios to the fundamental linear algebraic form, Ax=b. We show LeSQnet is faster than NetPlumber, Veriflow, APkeep, AP verifier, and almost as fast as Delta-net, but gives more scalability, expressiveness than all the approaches including Delta-net, APkeep and Veriflow, with capability for policy updates when measured over 5 leading datasets.
-					  </div>
-					</div>
+<!--					<li>-->
+<!--						Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "LeSQnet: A Holistic and Expressive Tool using Least Squares for Network Verification", Under review in 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2022).-->
+<!--						<button class="btn btn-outline-primary btn-sm" type="button" data-toggle="collapse" data-target="#LeSQnetpaper" aria-expanded="false" aria-controls="collapseExample">-->
+<!--						abstract-->
+<!--	  					</button>-->
+<!--	  					<a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank">pdf</a>-->
+<!--<!--	  					<a class="btn btn-outline-primary btn-sm" href="" role="button" target="_blank">pdf</a>-->-->
+<!--					</li>-->
+<!--					<div class="collapse" id="LeSQnetpaper">-->
+<!--					  <div class="card card-body">-->
+<!--						We present LeSQnet, a network verification tool that proposes a new fundamental technique for network verification -- away from the domain of SAT/SMT solvers, towards a more computationally tractable, algorithmically expressive and visually pleasing domain of linear algebra.-->
+<!--LeSQnets' premise is to abstract out IP prefixes into standard basis vectors in a unique way; the smart arrangement of standard basis vectors lead to the creation of a port-specific design matrix A, representing a set of IP prefixes that a router forwards along its ports.-->
+<!--By equating this matrix A and a vector b that represents the set of all IP prefixes under consideration, we are able to apply least-squares to compute which prefixes are reachable at the destination. Further, the use of least-squares opens new possibilities for understanding network behavior. For example, we are able to map rules, routing policies, what-if scenarios to the fundamental linear algebraic form, Ax=b. We show LeSQnet is faster than NetPlumber, Veriflow, APkeep, AP verifier, and almost as fast as Delta-net, but gives more scalability, expressiveness than all the approaches including Delta-net, APkeep and Veriflow, with capability for policy updates when measured over 5 leading datasets.-->
+<!--					  </div>-->
+<!--					</div>-->
 					
 					
 					<li>
