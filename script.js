@@ -194,7 +194,7 @@ function linkButton(targetLink){
     butn.innerHTML = "pdf"
     let link_list = getPageLinks()
     butn.href = link_list[targetLink]
-    console.log(targetLink)
+//     console.log(targetLink)
     if (butn.href[butn.href.length-1] === "#"){
         console.log()
         butn.classList.add("disabled")
