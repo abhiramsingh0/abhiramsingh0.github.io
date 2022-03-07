@@ -143,7 +143,7 @@ function getAddress(){
     div.innerHTML = "Computer Science and Engineering"
     details.appendChild(div)
     div = document.createElement("div")
-    div.innerHTML = "Indian Institiute of Technology Bombay"
+    div.innerHTML = "Indian Institute of Technology Bombay"
     details.appendChild(div)
     return details
 }
