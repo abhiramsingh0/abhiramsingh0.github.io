@@ -393,7 +393,7 @@ function getJournalObj(){
 }
 
 function getConferenceObj(){
-    papers = [`Abhiram Singh, Aniruddha Kushwaha and Ashwin Gumaste, "TAP-IN: Table Address Prediction using Intelligent Learning for SDN Networks", to be submitted in IEEE International Conference on Dependable Systems and Networks (DSN 2022).`,
+    papers = [`Abhiram Singh, Aniruddha Kushwaha and Ashwin Gumaste, "TAP-IN: Table Address Prediction using Intelligent Learning for SDN Networks", to be submitted in IEEE Transactions on Emerging Topics in Computing.`,
                 `Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Using Deep Reinforcement Learning for Routing in IP Networks", Accepted in IEEE 30th International Conference on Computer Communications and Networks (ICCCN), 2021.`,
                 `Abhiram Singh and T. P. Sharma, "A survey on area coverage in wireless sensor networks", Accepted in IEEE International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT), 2014.`,
             ]
