@@ -169,7 +169,7 @@ function createCol2(){
     divCol.appendChild(h3)
     ul_preprint = create_preprint()
     divCol.appendChild(ul_preprint)
-    h3 = createHeading("h3", "Patent Application")
+    h3 = createHeading("h3", "Patent")
     divCol.appendChild(h3)
     ul_patent = create_patents()
     divCol.appendChild(ul_patent)
