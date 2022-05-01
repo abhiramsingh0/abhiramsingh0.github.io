@@ -407,7 +407,7 @@ function getPreprintObj(){
 }
 
 function getPatentObj(){
-    papers = [`Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Grafnet: Using Graph Neural Networks to Create Table-Less Routers", under review, USPTO Publication Number: US-2021-0297324-A1.`,
+    papers = [`Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Using Graph Neural Networks to Create Table-Less Routers", Granted, USPTO Patent Number: 11310119.`,
             ]
     return papers
 }
