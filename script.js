@@ -384,7 +384,7 @@ function get_my_details(){
 }
 
 function getJournalObj(){
-    papers = [`Abhiram Singh, Sidharth Sharma and Ashwin Gumaste, "Grafnet: Using Graph Neural Networks to Create Table-Less Routers", Accepted in IEEE Transactions on Network Science and Engineering (TNSE).`,
+    papers = [`Abhiram Singh, Sidharth Sharma, Ashwin Gumaste and Jianping Wang, "Grafnet: Using Graph Neural Networks to Create Table-Less Routers", Accepted in IEEE Transactions on Network Science and Engineering (TNSE).`,
                 `Abhiram Singh and Ashwin Gumaste, "Decoding imagined speech and computer control using brain waves", Accepted in Elsevier Journal of Neuroscience Methods, 2021.`,
                 `Sidharth Sharma, Abhiram Singh, Ashwin Gumaste and Biswanath Mukherjee, "Light-trail Design for 5G Backhaul: Architecture, SDN Impact and Coordinated Multipoint", Accepted in IEEE/OSA Journal of Lightwave Technology (JLT), 2021.`,
                 'Abhiram Singh and T. P. Sharma, "Position and hop-count assisted full coverage control in dense sensor networks", Accepted in Springer Journal of Wireless Networks, 2015.'
