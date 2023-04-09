@@ -28,7 +28,7 @@ function createHeading(headType, heading){
 function createNavTabs(){
     ul = document.createElement("ol");
     ul.classList.add("nav", "nav-tabs", "nav-fill");
-    tabName = ["Home", "CV"];
+    tabName = ["Home", "CV", "Contact"];
     itemsList = createNavTabItem(tabName);
     for (id=0; id<itemsList.length; id++){
         ul.appendChild(itemsList[id]);
@@ -75,6 +75,9 @@ function createTabContent(tabName){
     }
     else if (tabName === "CV"){
         createTabContentCV()
+    }
+    else if (tabName === "Contact") {
+      createTabContentContact()
     }
 }
 
@@ -453,4 +456,12 @@ function getPageLinks(){
         "Grafnet1": `https://patents.google.com/patent/US20210297324A1/en`,
     }
     return links
+}
+
+function createTabContentContact() {
+  divContent = document.getElementsByClassName("tab-content")[0]
+  del_childs(divContent)
+  divContact = createDivByIdClass("form-container", "tab-pane", "fade", "active", "in")
+  divContent.appendChild(divContact)
+  divContact.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9uE09VB7KZ4vGF4roiDqofGSRFGuBCtyQFO2sZjNRM-hg7w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
 }
