@@ -457,7 +457,7 @@ function createTabContentContact() {
   del_childs(divContent)
   divMessage = document.createElement("div");
   divContent.appendChild(divMessage)
-  divMessage.innerHTML = 'Message Mil Rhe Hai';
+  divMessage.innerHTML = 'Call ka time message kijiye. Link share karunga alag se.';
   divContact = createDivByIdClass("form-container", "tab-pane", "fade", "active", "in")
   divContent.appendChild(divContact)
   divContact.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9uE09VB7KZ4vGF4roiDqofGSRFGuBCtyQFO2sZjNRM-hg7w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
