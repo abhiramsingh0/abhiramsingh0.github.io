@@ -457,7 +457,7 @@ function createTabContentContact() {
   del_childs(divContent)
   divMessage = document.createElement("div");
   divContent.appendChild(divMessage)
-  divMessage.innerHTML = 'Theek hu. fever ki goli li thi. to aaram hai, weakness hai, pet gadbad hai to jyada ni kha rha. moong dal hi bas.';
+  divMessage.innerHTML = 'https://talk.brave.com/XPAyzAx-GKEFGF4Nw5-xeU3NKT0D4whM6zjXt-hCuHo';
   divContact = createDivByIdClass("form-container", "tab-pane", "fade", "active", "in")
   divContent.appendChild(divContact)
   divContact.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9uE09VB7KZ4vGF4roiDqofGSRFGuBCtyQFO2sZjNRM-hg7w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
