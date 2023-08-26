@@ -462,3 +462,13 @@ function createTabContentContact() {
   divContent.appendChild(divContact)
   divContact.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9uE09VB7KZ4vGF4roiDqofGSRFGuBCtyQFO2sZjNRM-hg7w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
 }
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/64e9e891b2d3e13950ec3cb7/1h8or8uu6';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
