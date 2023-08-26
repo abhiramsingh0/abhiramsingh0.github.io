@@ -457,7 +457,7 @@ function createTabContentContact() {
   del_childs(divContent)
   divMessage = document.createElement("div");
   divContent.appendChild(divMessage)
-  divMessage.innerHTML = 'Link open ho to message kijiye. Ye website https se sharing tak copy karke brave ke private tab me open kijiye https://docs.google.com/document/d/10WqlDKtnmkesHoJjhwq1dWnxj7yMvypYuqFelN5EITw/edit?usp=sharing';
+  divMessage.innerHTML = 'Isi website ko brave ke private tab me open kijiye. home tab me neeche green circle bana hoga, uspe click kijiye, new conversation pe click kijiye, chat ka option aa jaega. Message kar sakte fir.';
   divContact = createDivByIdClass("form-container", "tab-pane", "fade", "active", "in")
   divContent.appendChild(divContact)
   divContact.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9uE09VB7KZ4vGF4roiDqofGSRFGuBCtyQFO2sZjNRM-hg7w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
